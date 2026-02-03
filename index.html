@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CBS | Career Builders Society</title>
+    <title>CBS | Career & Business Society</title>
 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -185,6 +185,18 @@
         background: #000;
       }
 
+    .reward-video{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;   /* ✅ shows full video */
+      object-position: center;
+      background: #000;      /* letterbox bars */
+      display: none;
+    }
+
+
       .announcement-banner {
         background: var(--accent);
         color: white;
@@ -265,7 +277,7 @@
           />
           <h1>The CBS Mission</h1>
           <p>
-            Career Builders Society (CBS) is more than a club; it's an engine for
+            Career & Business Society (CBS) is more than a club; it's an engine for
             professional growth. We operate through specialized departments to bring
             you world-class events.
           </p>
@@ -353,13 +365,10 @@
       </section>
 
       <section class="slide" id="reward-slide" style="padding: 0; overflow: hidden;">
-        <video
-          id="reward-video"
-          style="width: 100%; height: 100%; object-fit: cover; display: none;"
-        >
-          <source src="CBS.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+    <video id="reward-video" class="reward-video" playsinline>
+      <source src="CBS.mp4" type="video/mp4" />
+    </video>
+
 
         <div
           id="final-result-content"
